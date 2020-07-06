@@ -1,3 +1,5 @@
+set nocompatible
+filetype off
 set nu
 syntax on
 set shiftwidth=4
@@ -27,3 +29,9 @@ set shiftwidth=4
 nnoremap <leader>wq :wq<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>w :w<CR>
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+    Plugin 'VundleVim/Vundle.vim'
+    Plugin 'terryma/vim-multiple-cursors'
+call vundle#end()

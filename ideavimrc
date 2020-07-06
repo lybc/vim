@@ -9,3 +9,4 @@ nnoremap <leader>fw :action Forward<CR>
 " as mouse clicked
 nnoremap <leader>gd :action GotoDeclaration<CR>
 nnoremap <leader>fm :action ReformatCode<CR>
+set multiple-cursors
