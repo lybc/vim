@@ -10,3 +10,5 @@ nnoremap <leader>fw :action Forward<CR>
 nnoremap <leader>gd :action GotoDeclaration<CR>
 nnoremap <leader>fm :action ReformatCode<CR>
 set multiple-cursors
+" normal模式下输入发切换到英文
+set keep-english-in-normal[-and-restore-in-insert]
