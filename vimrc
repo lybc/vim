@@ -27,8 +27,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
-" 在上下移动光标时，光标的上方或下方至少会保留显示的行数
-set scrolloff=7
 " 括号配对情况, 跳转并高亮一下匹配的括号
 set showmatch
 " How many tenths of a second to blink when matching brackets
