@@ -1,10 +1,16 @@
 #!/bin/bash
 
-wget --no-check-certificate https://raw.githubusercontent.com/lybc/vim/master/ideavimrc -O $HOME/.ideavimrc
-wget --no-check-certificate https://raw.githubusercontent.com/lybc/vim/master/vimrc -O $HOME/.vimrc
+if [ ! -d "~/.vim"  ];then
+    mkdir ~/.vim
+fi
+   
+# install vundle    
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/lybc/vim.git /tmp/vim
 
-vim -E -u $HOME/.vimrc +qall
-
+cp -rf ./vimrc ~/.vimrc
+cp -rf ./ideavimrc ~/.ideavimrc
 cp -rf ./colors ~/.vim/colors
 
+vim -E -u $HOME/.vimrc +qall
 echo 'Install Complete!'
