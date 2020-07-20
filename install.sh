@@ -1,10 +1,9 @@
 #!/bin/bash
-ls ~/.vim
-if [ -d "~/.vim" ];then
+if [ ! -d "~/.vim" ];then
     mkdir ~/.vim
 fi
 
-if [ -f "~/.vim/bundle/Vundle.vim" ]; then
+if [ ! -f "~/.vim/bundle/Vundle.vim" ]; then
     echo "Vundle.vim不存在，开始安装..."
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
