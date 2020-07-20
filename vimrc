@@ -1,6 +1,7 @@
 " vimrc文件修改之后自动加载, linux
 autocmd! bufwritepost .vimrc source %
 set nocompatible
+set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
 filetype off
 set nu
 syntax on
